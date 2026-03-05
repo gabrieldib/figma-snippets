@@ -51,8 +51,8 @@ const svgString = `<svg width="${A*2}" height="${A*2}" viewBox="${-A} ${-A} ${A*
 // Create the vector node in Figma
 const svgNode = figma.createNodeFromSvg(svgString);
 svgNode.name = `Polar Lissajous (p=${P}, q=${Q}, phi=π/2)`;
-svgNode.x = figma.viewport.center.x - A;
-svgNode.y = figma.viewport.center.y - A;
+svgNode.x = 0
+svgNode.y = 0
 
 // Focus the camera on the new curve
 figma.currentPage.selection = [svgNode];
